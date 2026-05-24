@@ -1,0 +1,16 @@
+LowAir-GS/
+├── README.md
+├── docs/
+│   ├── ROADMAP.md              # 项目路线图
+│   ├── DATASET_GUIDE.md        # 数据集与采集规范
+│   ├── EXPERIMENT_PLAN.md      # 实验设计方案
+│   └── STUDENT_TASKS.md        # 学生任务分工与验收要求
+├── scripts/
+│   └── .gitkeep                # 数据处理、训练、评估脚本
+├── data/
+│   └── .gitkeep                # 本地数据目录，不建议提交大文件
+├── assets/
+│   └── .gitkeep                # 图片、流程图、截图、展示素材
+├── outputs/
+│   └── .gitkeep                # 本地输出结果，不建议提交大文件
+└── .gitignore
