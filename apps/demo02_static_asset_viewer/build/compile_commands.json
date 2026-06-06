@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/Demo02StaticAssetViewer_autogen/mocs_compilation.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/mocs_compilation.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/Demo02StaticAssetViewer_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/main.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/main.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/main.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/MainWindow.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/MainWindow.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/MainWindow.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/MainWindow.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/RenderWidget.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/RenderWidget.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/RenderWidget.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/RenderWidget.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/asset/ModelAsset.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/ModelAsset.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/ModelAsset.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/asset/ModelAsset.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/asset/ModelLoader.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/ModelLoader.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/ModelLoader.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/asset/ModelLoader.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/asset/AssimpModelLoader.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/AssimpModelLoader.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/asset/AssimpModelLoader.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/asset/AssimpModelLoader.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/render/MeshRenderer.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/MeshRenderer.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/MeshRenderer.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/render/MeshRenderer.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/render/GridRenderer.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/GridRenderer.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/GridRenderer.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/render/GridRenderer.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/render/AxisRenderer.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/AxisRenderer.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/AxisRenderer.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/render/AxisRenderer.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/render/BoundingBoxRenderer.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/BoundingBoxRenderer.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/render/BoundingBoxRenderer.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/render/BoundingBoxRenderer.cpp.o"
+},
+{
+  "directory": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/build/Demo02StaticAssetViewer_autogen/include -I/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wno-unused-parameter -fPIC -o CMakeFiles/Demo02StaticAssetViewer.dir/camera/OrbitCamera.cpp.o -c /home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/camera/OrbitCamera.cpp",
+  "file": "/home/ubuntu/LowAir-GS-git/apps/demo02_static_asset_viewer/camera/OrbitCamera.cpp",
+  "output": "CMakeFiles/Demo02StaticAssetViewer.dir/camera/OrbitCamera.cpp.o"
+}
+]
