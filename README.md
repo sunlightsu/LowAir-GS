@@ -232,20 +232,78 @@ LowAir-GS/
 
 ## 12. 当前状态
 
-当前仓库已完成 Demo-01 的初步开发：
+**Demo-01 已完成并合并至 main 分支（2026-06-06）。**
 
-- [x] Demo-01: 基于 Qt C++ 的摄影测量三维模型与外部无人机实时数据虚实融合显示系统 MVP
-  - 实现了基于 Assimp 的真实摄影测量三维模型（OBJ/PLY）加载与 OpenGL 渲染
-  - 实现了 UDP JSON 遥测接收与无人机状态解析
-  - 实现了深色主题（Dark Mode）无人机地面站 UI 界面
-  - 提供了 Python 无人机模拟器用于快速演示
-  - 提供了完整的一键安装脚本（`install.sh`）
-  - 提供了详尽的《用户手册》（`USER_MANUAL.md`）、《二次开发手册》（`DEV_GUIDE.md`）与《技术报告》（`TECHNICAL_REPORT.md`）
+### 12.1 Demo-01 完成情况
 
-后续计划逐步补充：
+- [x] **Qt C++ 三维虚实融合显示系统 MVP**（`apps/uav_scene_fusion_qt/`）
+  - 基于 Assimp 加载真实摄影测量三维模型（Stanford Bunny 激光扫描 69,451 三角面 + 泊松重建地形 9,769 三角面）
+  - 基于 QOpenGLWidget 的三维场景交互渲染（旋转、缩放、重置视角）
+  - UDP JSON 遥测接收（14580 端口，20 Hz，QUdpSocket 异步解析）
+  - 无人机四面体模型实时位姿更新 + 橙色历史轨迹线（最多 1000 点）
+  - 深色主题（Dark Mode）GCS 状态面板（坐标、姿态、电量、轨迹点数）
+- [x] **Python 无人机模拟器**（`tools/telemetry_simulator/send_uav_udp.py`）
+  - 椭圆飞行轨迹，高度起伏，姿态变化，20 Hz 发送
+- [x] **一键安装脚本**（`install.sh`）
+  - 自动安装 Qt6、CMake、编译工具链，从源码编译 Assimp，构建主程序
+- [x] **完整文档体系**
+  - [`USER_MANUAL.md`](USER_MANUAL.md)：软件应用手册（环境要求、安装、操作指南、FAQ）
+  - [`DEV_GUIDE.md`](DEV_GUIDE.md)：二次开发手册（架构说明、核心类、UDP 协议、扩展指南）
+  - [`TECHNICAL_REPORT.md`](TECHNICAL_REPORT.md)：技术报告（绪论、技术方案、光照公式、位姿矩阵推导、结论展望）
 
-- 数据采集规范；
-- COLMAP / OpenDroneMap 处理流程；
+### 12.2 快速开始
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/SWJTU-AI-Lab/LowAir-GS.git
+cd LowAir-GS
+
+# 2. 一键安装依赖并编译
+chmod +x install.sh && ./install.sh
+
+# 3. 启动程序，点击 Start UDP
+./apps/uav_scene_fusion_qt/build/UavSceneFusionQt
+
+# 4. 新开终端，启动模拟器
+python3 tools/telemetry_simulator/send_uav_udp.py
+```
+
+### 12.3 当前仓库结构
+
+```text
+LowAir-GS/
+├── install.sh                          # 一键安装脚本
+├── USER_MANUAL.md                      # 软件应用手册
+├── DEV_GUIDE.md                        # 二次开发手册
+├── TECHNICAL_REPORT.md                 # 技术报告
+├── apps/
+│   └── uav_scene_fusion_qt/            # Demo-01 Qt C++ 主程序
+│       ├── CMakeLists.txt
+│       ├── main.cpp / MainWindow / RenderWidget
+│       ├── geo/CoordinateManager       # 坐标系接口（预留 WGS84）
+│       ├── render/
+│       │   ├── ObjModelRenderer        # Assimp 摄影测量模型加载器
+│       │   ├── UavRenderer             # 无人机四面体模型
+│       │   └── TrajectoryRenderer      # 橙色轨迹线
+│       ├── scene/SimpleScene           # 地面网格 + 坐标轴 + 建筑块
+│       └── telemetry/UdpJsonReceiver   # UDP JSON 接收解析
+├── tools/
+│   └── telemetry_simulator/
+│       └── send_uav_udp.py             # Python 无人机模拟器
+├── sample_data/
+│   └── scene/
+│       ├── model_stanford_bunny_scan.obj      # 真实激光扫描模型
+│       └── model_photogrammetry_terrain.obj   # 摄影测量地形网格
+└── docs/
+    └── tasks/demo-01-uav-scene-fusion-task-card.md
+```
+
+### 12.4 后续计划
+
+后续将逐步补充：
+
+- 数据采集规范与低空航线设计指南；
+- COLMAP / OpenDroneMap 处理流程脚本；
 - Nerfstudio Splatfacto 训练脚本；
 - SuperSplat 展示流程；
 - 实验指标与结果模板；
