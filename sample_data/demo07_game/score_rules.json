@@ -1,0 +1,10 @@
+{
+  "max_score": 100,
+  "rules": {
+    "target_reached": 20,
+    "zone_coverage": 30,
+    "path_efficiency": 20,
+    "time_efficiency": 15,
+    "energy_estimate": 15
+  }
+}

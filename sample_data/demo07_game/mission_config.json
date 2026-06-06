@@ -1,0 +1,124 @@
+{
+  "mission_id": "demo07_inspection_mission_01",
+  "scenario_name": "Demo-07 虚拟巡检评估任务",
+  "scene": {
+    "mesh_path": "",
+    "gaussian_path": ""
+  },
+  "replay": {
+    "track_path": "replay_track.jsonl",
+    "speed": 1.0,
+    "loop": false
+  },
+  "scoring": {
+    "max_score": 100,
+    "rules": {
+      "target_reached": 20,
+      "zone_coverage": 30,
+      "path_efficiency": 20,
+      "time_efficiency": 15,
+      "energy_estimate": 15
+    }
+  },
+  "targets": [
+    {
+      "id": 1,
+      "name": "Target-01",
+      "type": "inspection_point",
+      "position": [
+        3.0,
+        0.5,
+        3.0
+      ],
+      "radius": 1.2,
+      "score": 20,
+      "effect_type": "glow"
+    },
+    {
+      "id": 2,
+      "name": "Target-02",
+      "type": "inspection_point",
+      "position": [
+        -3.0,
+        0.5,
+        3.0
+      ],
+      "radius": 1.2,
+      "score": 20,
+      "effect_type": "glow"
+    },
+    {
+      "id": 3,
+      "name": "Target-03",
+      "type": "inspection_point",
+      "position": [
+        0.0,
+        0.5,
+        -4.0
+      ],
+      "radius": 1.2,
+      "score": 20,
+      "effect_type": "glow"
+    },
+    {
+      "id": 4,
+      "name": "Target-04",
+      "type": "inspection_point",
+      "position": [
+        4.0,
+        0.5,
+        -2.0
+      ],
+      "radius": 1.2,
+      "score": 20,
+      "effect_type": "glow"
+    },
+    {
+      "id": 5,
+      "name": "Target-05",
+      "type": "inspection_point",
+      "position": [
+        -4.0,
+        0.5,
+        -2.0
+      ],
+      "radius": 1.2,
+      "score": 20,
+      "effect_type": "glow"
+    },
+    {
+      "id": 101,
+      "name": "Zone-A",
+      "type": "inspection_zone",
+      "center": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "size": [
+        4.0,
+        2.0,
+        4.0
+      ],
+      "score": 15,
+      "effect_type": "pulse"
+    },
+    {
+      "id": 102,
+      "name": "Zone-B",
+      "type": "inspection_zone",
+      "center": [
+        5.0,
+        1.0,
+        5.0
+      ],
+      "size": [
+        3.0,
+        2.0,
+        3.0
+      ],
+      "score": 15,
+      "effect_type": "pulse"
+    }
+  ]
+}

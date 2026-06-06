@@ -1,0 +1,21 @@
+{
+  "mission_id": "demo07_inspection_mission_01",
+  "scenario_name": "Demo-07 虚拟巡检评估任务",
+  "total_score": 87,
+  "max_score": 100,
+  "targets_completed": 5,
+  "total_targets": 5,
+  "zones_completed": 2,
+  "total_zones": 2,
+  "events_triggered": 5,
+  "elapsed_sec": 60.0,
+  "battery_remaining": 65.0,
+  "score_breakdown": {
+    "target_completion": 20,
+    "zone_coverage": 30,
+    "path_efficiency": 17,
+    "time_efficiency": 12,
+    "energy_estimate": 8
+  },
+  "note": "教学模拟评估报告，不是真实飞行评估结果"
+}
