@@ -73,10 +73,11 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 ```
 (3) 启动主程序：`./Demo03GeoCoordinateAlignment`
-(4) 启动模拟器（另开终端）：
+(4) 启动模拟器（另开终端，从仓库根目录执行）：
 ```bash
-cd tools/geo_telemetry_simulator
-python3 send_wgs84_uav_udp.py --rate 20
+# 在仓库根目录下执行，避免路径错误
+cd LowAir-GS
+python3 tools/geo_telemetry_simulator/send_wgs84_uav_udp.py --rate 20
 ```
 
 ### 3.3 结论与展望
