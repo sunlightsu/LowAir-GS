@@ -10,6 +10,7 @@
 class SimpleScene;
 class UavRenderer;
 class TrajectoryRenderer;
+class ObjModelRenderer;
 
 class RenderWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
@@ -39,6 +40,8 @@ private:
     SimpleScene *m_scene;
     UavRenderer *m_uavRenderer;
     TrajectoryRenderer *m_trajRenderer;
+    ObjModelRenderer *m_modelBunny;    ///< Stanford Bunny 真实激光扫描模型
+    ObjModelRenderer *m_modelTerrain;  ///< 摄影测量风格地形网格
 
     QMatrix4x4 m_projection;
     QMatrix4x4 m_view;
