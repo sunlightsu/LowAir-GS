@@ -1,6 +1,11 @@
-# Demo-01: UAV Scene Fusion Qt
+# Demo-01: UDP 无人机遥测接入与简化低空场景显示
 
 这是一个基于 Qt C++ 的桌面端演示程序，展示了基础框架、内置场景生成与局部坐标系下外部无人机实时数据的遥测可视化。
+
+> **⚠️ 目录结构说明**
+>
+> 遵循 [Demo 独立性原则](../../docs/DEMO_ROADMAP.md#demo-独立性原则)，本项目后续每个 Demo 都将独立存放。
+> 当前 Demo-01 暂存于 `apps/uav_scene_fusion_qt/` 目录中。从 Demo-02 起，将采用 `apps/demo02_photogrammetry_viewer/` 等独立目录形式，以确保功能边界清晰，避免在单一程序中无限制堆叠功能。
 
 ## 项目说明
 
