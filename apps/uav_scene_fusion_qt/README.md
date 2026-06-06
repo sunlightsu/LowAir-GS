@@ -1,20 +1,22 @@
 # Demo-01: UAV Scene Fusion Qt
 
-这是一个基于 Qt C++ 的桌面端演示程序，展示了摄影测量三维模型（当前为简化几何体替代）与外部无人机实时数据的虚实融合显示。
+这是一个基于 Qt C++ 的桌面端演示程序，展示了真实摄影测量三维模型与外部无人机实时数据的虚实融合显示。
 
 ## 项目说明
 
 本项目实现了：
-- 基于 QOpenGLWidget 的三维场景渲染
+- 基于 Assimp 的真实摄影测量三维模型（OBJ/PLY）加载与 OpenGL 渲染
+- 基于 QOpenGLWidget 的三维场景交互渲染
 - UDP JSON 遥测数据实时接收
 - 无人机三维位置、姿态和历史轨迹的可视化
-- 状态面板 UI 实时刷新
+- 深色主题（Dark Mode）状态面板 UI 实时刷新
 
 ## 依赖环境
 
 - Qt 6 (Core, Gui, Widgets, OpenGLWidgets, Network)
 - CMake 3.16+
 - C++17 或 C++20 编译器 (如 GCC, Clang, MSVC)
+- Assimp 5.0+ (用于加载摄影测量 3D 模型)
 - Python 3 (用于运行模拟器脚本)
 
 ## 编译方法

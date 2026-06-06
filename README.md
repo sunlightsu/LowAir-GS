@@ -235,9 +235,12 @@ LowAir-GS/
 当前仓库已完成 Demo-01 的初步开发：
 
 - [x] Demo-01: 基于 Qt C++ 的摄影测量三维模型与外部无人机实时数据虚实融合显示系统 MVP
-  - 实现了 Qt OpenGL 三维场景渲染
+  - 实现了基于 Assimp 的真实摄影测量三维模型（OBJ/PLY）加载与 OpenGL 渲染
   - 实现了 UDP JSON 遥测接收与无人机状态解析
+  - 实现了深色主题（Dark Mode）无人机地面站 UI 界面
   - 提供了 Python 无人机模拟器用于快速演示
+  - 提供了完整的一键安装脚本（`install.sh`）
+  - 提供了详尽的《用户手册》（`USER_MANUAL.md`）、《二次开发手册》（`DEV_GUIDE.md`）与《技术报告》（`TECHNICAL_REPORT.md`）
 
 后续计划逐步补充：
 

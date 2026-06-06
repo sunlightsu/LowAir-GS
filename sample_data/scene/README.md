@@ -17,4 +17,8 @@ sample_data/scene/
 └── README.md             # 本说明文件
 ```
 
-在第一版 Demo-01 中，程序内置了由代码生成的简化几何体（地面网格、坐标轴、简易建筑块），因此不需要依赖外部模型文件即可运行演示。
+在 Demo-01 中，已内置了两个小体积的开源摄影测量/扫描模型：
+1. `model_stanford_bunny_scan.obj`：真实激光扫描重建（Stanford 3D Scanning Repository）
+2. `model_photogrammetry_terrain.obj`：泊松曲面重建的摄影测量风格地形
+
+程序启动时将通过 Assimp 自动加载这两个模型进行渲染展示。对于更大的真实场景模型，请遵循上述不提交大文件的规范。
