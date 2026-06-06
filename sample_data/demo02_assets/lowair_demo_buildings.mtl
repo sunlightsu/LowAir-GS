@@ -1,0 +1,50 @@
+# LowAir-GS Demo-02 Material Library
+newmtl mat_building_a
+Ka 0.550 0.600 0.650
+Kd 0.550 0.600 0.650
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_building_b
+Ka 0.700 0.650 0.550
+Kd 0.700 0.650 0.550
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_building_c
+Ka 0.600 0.700 0.600
+Kd 0.600 0.700 0.600
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_building_d
+Ka 0.750 0.550 0.500
+Kd 0.750 0.550 0.500
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_building_e
+Ka 0.650 0.650 0.750
+Kd 0.650 0.650 0.750
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_roof
+Ka 0.350 0.350 0.400
+Kd 0.350 0.350 0.400
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+
+newmtl mat_terrain
+Ka 0.450 0.550 0.400
+Kd 0.450 0.550 0.400
+Ks 0.100 0.100 0.100
+Ns 32.0
+d 1.0
+

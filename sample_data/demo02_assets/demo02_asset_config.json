@@ -1,0 +1,27 @@
+{
+  "demo": "Demo-02",
+  "description": "Static 3D Asset Viewer — teaching demonstration config",
+  "default_model": "sample_data/demo02_assets/lowair_demo_buildings.obj",
+  "unit": "meter",
+  "coordinate_frame": "LOCAL_SCENE",
+  "initial_transform": {
+    "scale": 1.0,
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_deg": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "display": {
+    "show_grid": true,
+    "show_axis": true,
+    "show_bounding_box": true,
+    "wireframe": false,
+    "background_color": "#1E1E2E"
+  }
+}
