@@ -194,7 +194,8 @@ LowAir-GS/
 │   ├── demo03_geo_coordinate_alignment/# Demo-03 WGS84 坐标转换演示器
 │   ├── demo04_mavlink_telemetry_viewer/# Demo-04 MAVLink 遥测演示器
 │   ├── demo05_gaussian_splat_viewer/   # Demo-05 3DGS 场景加载演示器
-│   └── demo06_dual_scene_fusion/       # Demo-06 双源融合查看器
+│   ├── demo06_dual_scene_fusion/       # Demo-06 双源融合查看器
+│   └── demo07_game_event_evaluation/   # Demo-07 虚拟目标与游戏化评估系统
 ├── tools/
 │   ├── telemetry_simulator/            # Python 无人机遥测模拟器
 │   ├── geo_telemetry_simulator/        # Python WGS84 遥测模拟器
@@ -205,13 +206,15 @@ LowAir-GS/
 │   ├── demo02_assets/                  # Demo-02 示例三维资产
 │   ├── demo03_geo/                     # Demo-03 示例地理数据
 │   ├── demo05_gaussians/               # Demo-05 示例高斯数据
-│   └── demo06_fusion/                  # Demo-06 示例双源融合数据
+│   ├── demo06_fusion/                  # Demo-06 示例双源融合数据
+│   └── demo07_game/                    # Demo-07 示例任务数据
 ├── screenshots/
 │   ├── demo02/                         # Demo-02 验收截图
 │   ├── demo03/                         # Demo-03 验收截图
 │   ├── demo04/                         # Demo-04 验收截图
 │   ├── demo05/                         # Demo-05 验收截图
-│   └── demo06/                         # Demo-06 验收截图
+│   ├── demo06/                         # Demo-06 验收截图
+│   └── demo07/                         # Demo-07 验收截图（12 张）
 ├── docs/
 │   ├── DEMO_ROADMAP.md                 # 项目 Demo 路线图
 │   └── tasks/                          # 学生任务分工与验收要求
@@ -313,8 +316,19 @@ LowAir-GS/
 
 ## 12. 当前状态
 
-**Demo-01 基础框架重构版已提交（2026-06-06）。** 
-详见：[Demo 路线图 (DEMO_ROADMAP.md)](docs/DEMO_ROADMAP.md)
+**v0.7.0 全部 7 个 Demo 已全部完成（2026-06-07）。** 详见：[Demo 路线图 (DEMO_ROADMAP.md)](docs/DEMO_ROADMAP.md)
+
+### 版本演进总览
+
+| 版本 | 发布日期 | 核心新增 |
+|---|---|---|
+| v0.1.0 | 2026-06 | Demo-01：UDP 遥测接入与简化场景显示 |
+| v0.2.0 | 2026-06 | Demo-02：静态三维资产加载与渲染 |
+| v0.3.0 | 2026-06 | Demo-03：WGS84/ENU/SCENE 坐标转换 |
+| v0.4.0 | 2026-06 | Demo-04：MAVLink 无人机遥测接入 |
+| v0.5.0 | 2026-06 | Demo-05：3D Gaussian Splatting 场景加载与显示 |
+| v0.6.0 | 2026-06 | Demo-06：摄影测量模型 + 3DGS 双源融合 |
+| **v0.7.0** | **2026-06-07** | **Demo-07：虚拟目标、事件、特效与游戏化评估（包含 Virtual Explosion）** |
 
 ### 12.1 Demo 完成情况
 
