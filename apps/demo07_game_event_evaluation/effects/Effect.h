@@ -8,6 +8,7 @@ enum class EffectType {
     Glow,       // 光晕（目标点到达）
     Pulse,      // 脉冲环（区域进入）
     Particle,   // 粒子爆发（任务完成）
+    Explosion,  // 虚拟爆炸视觉特效（非物理、非毁伤）
     None
 };
 
@@ -29,7 +30,8 @@ struct Effect {
     static EffectType fromString(const QString& s) {
         if (s == "glow")     return EffectType::Glow;
         if (s == "pulse")    return EffectType::Pulse;
-        if (s == "particle") return EffectType::Particle;
+        if (s == "particle")  return EffectType::Particle;
+        if (s == "explosion") return EffectType::Explosion;
         return EffectType::Glow;
     }
 };
