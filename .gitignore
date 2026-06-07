@@ -1,17 +1,28 @@
 
+# ============================================================
+# CMake / build outputs
+# ============================================================
+build/
+**/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.exe
+*.dll
+*.so
+*.dylib
+*_autogen/
+.qt/
+
+# ============================================================
 # 遥测日志（不提交真实飞行数据）
+# ============================================================
 outputs/
 *.ulg
 *.tlog
 *.bin
 *.log
-
-# Demo-04 build
-apps/demo04_mavlink_telemetry_viewer/build/
-apps/demo05_gaussian_splat_viewer/build/
-
-# Demo-06 build
-apps/demo06_dual_scene_fusion/build/
-
-# Demo-07 build
-apps/demo07_game_event_evaluation/build/

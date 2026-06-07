@@ -1,5 +1,6 @@
 #include "TrajectoryRenderer.h"
 
+// 顶点着色器：传递顶点位置
 static const char* TRAJ_VERT = R"(
 #version 330 core
 layout(location=0) in vec3 aPos;
@@ -7,10 +8,12 @@ uniform mat4 uMVP;
 void main(){ gl_Position = uMVP * vec4(aPos, 1.0); }
 )";
 
+// 片段着色器：通过 uniform 控制颜色
 static const char* TRAJ_FRAG = R"(
 #version 330 core
+uniform vec4 uColor;
 out vec4 fragColor;
-void main(){ fragColor = vec4(0.0, 0.9, 0.9, 0.85); }
+void main(){ fragColor = uColor; }
 )";
 
 TrajectoryRenderer::~TrajectoryRenderer() { cleanup(); }
@@ -53,12 +56,32 @@ void TrajectoryRenderer::render(const QMatrix4x4& mvp) {
     m_prog.bind();
     m_prog.setUniformValue("uMVP", mvp);
     glBindVertexArray(m_vao);
-    glDrawArrays(GL_LINE_STRIP, 0, (GLsizei)m_points.size());
+
+    int total = (int)m_points.size();
+    int hi = std::min(m_highlightUpTo, total);
+
+    // 高亮段（亮黄色，已完成任务段）
+    if (hi >= 2) {
+        m_prog.setUniformValue("uColor", QVector4D(1.0f, 0.9f, 0.1f, 0.95f));
+        glDrawArrays(GL_LINE_STRIP, 0, hi);
+    }
+
+    // 普通段（青色，尚未完成段）
+    if (hi < total) {
+        int start = std::max(0, hi - 1);  // 保持连续
+        m_prog.setUniformValue("uColor", QVector4D(0.0f, 0.9f, 0.9f, 0.85f));
+        glDrawArrays(GL_LINE_STRIP, start, total - start);
+    }
+
     glBindVertexArray(0);
     m_prog.release();
 }
 
-void TrajectoryRenderer::clear() { m_points.clear(); m_dirty = true; }
+void TrajectoryRenderer::clear() {
+    m_points.clear();
+    m_highlightUpTo = 0;
+    m_dirty = true;
+}
 
 void TrajectoryRenderer::cleanup() {
     if (m_vao) { glDeleteVertexArrays(1, &m_vao); m_vao = 0; }

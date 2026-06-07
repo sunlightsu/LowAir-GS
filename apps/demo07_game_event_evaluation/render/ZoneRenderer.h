@@ -5,7 +5,10 @@
 #include <QMatrix4x4>
 #include <vector>
 
-// 触发区域渲染器（半透明线框长方体）
+// 触发区域渲染器：
+//   - 未触发：半透明蓝色线框
+//   - 触发中：亮蓝色脉冲呼吸动画线框
+//   - 已完成：绿色线框
 class ZoneRenderer : public QOpenGLExtraFunctions {
 public:
     ZoneRenderer() = default;
@@ -24,4 +27,5 @@ private:
     GLuint m_ibo = 0;
     int    m_indexCount = 0;
     bool   m_initialized = false;
+    float  m_pulseTime = 0.0f;  // 脉冲动画时间累计
 };

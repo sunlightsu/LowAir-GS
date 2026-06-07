@@ -47,3 +47,49 @@ void HudRenderer::render(QPainter& painter, int viewW, int viewH,
     painter.setPen(QColor(0xd0, 0xd0, 0xd0));
     painter.drawText(8, y, QString("EVENTS: %1").arg(events));
 }
+
+void HudRenderer::renderPopups(QPainter& painter, int viewW, int viewH,
+                                const LabelPopupQueue& popups) {
+    const auto& entries = popups.entries();
+    if (entries.isEmpty()) return;
+
+    painter.setRenderHint(QPainter::Antialiasing);
+
+    QFont font("Monospace", 12);
+    font.setBold(true);
+    painter.setFont(font);
+
+    // 弹窗从右上角向下排列
+    int baseX = viewW - 260;
+    int baseY = 50;
+    int lineH = 36;
+
+    for (int i = 0; i < entries.size(); ++i) {
+        const auto& e = entries[i];
+        float a = e.alpha();
+        if (a <= 0.0f) continue;
+
+        int alpha8 = (int)(a * 200);
+        int y = baseY + i * lineH;
+
+        // 背景
+        painter.fillRect(baseX - 8, y - 20, 260, 28,
+                         QColor(10, 20, 40, (int)(a * 160)));
+
+        // 文字颜色：得分正向用黄绿色，区域用蓝色，粒子用橙色
+        QColor textColor;
+        if (e.text.startsWith("+")) {
+            if (e.text.contains("Particle") || e.text.contains("Checkpoint"))
+                textColor = QColor(0xff, 0x80, 0x20, alpha8);
+            else if (e.text.contains("Zone") || e.text.contains("区域"))
+                textColor = QColor(0x40, 0xc0, 0xff, alpha8);
+            else
+                textColor = QColor(0x80, 0xff, 0x40, alpha8);
+        } else {
+            textColor = QColor(0xff, 0xff, 0x80, alpha8);
+        }
+
+        painter.setPen(textColor);
+        painter.drawText(baseX, y, e.text);
+    }
+}
