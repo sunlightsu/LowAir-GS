@@ -5,7 +5,7 @@
 > **⚠️ 目录结构说明**
 >
 > 遵循 [Demo 独立性原则](../../docs/DEMO_ROADMAP.md#demo-独立性原则)，本项目后续每个 Demo 都将独立存放。
-> 当前 Demo-01 暂存于 `apps/uav_scene_fusion_qt/` 目录中。从 Demo-02 起，将采用 `apps/demo02_photogrammetry_viewer/` 等独立目录形式，以确保功能边界清晰，避免在单一程序中无限制堆叠功能。
+> 当前 Demo-01 位于 `apps/demo01_uav_scene_fusion/` 目录中。
 
 ## 项目说明
 
@@ -29,7 +29,7 @@
 在 Linux / macOS 下：
 
 ```bash
-cd apps/uav_scene_fusion_qt
+cd apps/demo01_uav_scene_fusion
 mkdir build && cd build
 cmake ..
 make -j4
@@ -39,7 +39,7 @@ make -j4
 
 1. 启动 Qt 程序：
 ```bash
-./UavSceneFusionQt
+./Demo01UavSceneFusion
 ```
 
 2. 在程序界面左侧点击 **"Start UDP (14580)"** 按钮，开始监听 UDP 端口。

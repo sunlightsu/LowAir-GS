@@ -65,7 +65,7 @@ fi
 
 # 4. 编译 Qt6 应用程序
 log_info "开始编译 LowAir-GS Demo-01 Qt 应用程序..."
-PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/apps/uav_scene_fusion_qt"
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/apps/demo01_uav_scene_fusion"
 
 if [ ! -d "$PROJECT_DIR" ]; then
     log_error "找不到项目目录: $PROJECT_DIR"
@@ -84,10 +84,10 @@ make -j$(nproc)
 
 log_info "====================================================================="
 log_info "安装与编译全部完成！"
-log_info "执行文件路径: $PROJECT_DIR/build/UavSceneFusionQt"
+log_info "执行文件路径: $PROJECT_DIR/build/Demo01UavSceneFusion"
 log_info "====================================================================="
 log_info "运行指南："
-log_info "1. 启动地面站主程序: $PROJECT_DIR/build/UavSceneFusionQt"
+log_info "1. 启动地面站主程序: $PROJECT_DIR/build/Demo01UavSceneFusion"
 log_info "2. 在程序界面点击左侧的 'Start UDP (14580)'"
 log_info "3. 在另一个终端启动模拟器: python3 tools/telemetry_simulator/send_uav_udp.py"
 log_info "====================================================================="
