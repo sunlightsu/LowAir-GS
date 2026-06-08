@@ -1,0 +1,124 @@
+{
+  "mission_id": "demo07_inspection_mission_v2",
+  "scenario_name": "Demo-07 虚拟巡检评估任务（增强版）",
+  "scene": {
+    "mesh_path": "",
+    "gaussian_path": ""
+  },
+  "replay": {
+    "track_path": "replay_track.jsonl",
+    "speed": 1.0,
+    "loop": false
+  },
+  "scoring": {
+    "max_score": 100,
+    "rules": {
+      "target_reached": 20,
+      "zone_coverage": 30,
+      "path_efficiency": 20,
+      "time_efficiency": 15,
+      "energy_estimate": 15
+    }
+  },
+  "targets": [
+    {
+      "id": "target_01",
+      "name": "Target-01",
+      "type": "inspection_point",
+      "position": [3.0, 0.5, 3.0],
+      "radius": 1.2,
+      "score": 20,
+      "effect": "glow"
+    },
+    {
+      "id": "target_02",
+      "name": "Target-02",
+      "type": "inspection_point",
+      "position": [-3.0, 0.5, 3.0],
+      "radius": 1.2,
+      "score": 20,
+      "effect": "glow"
+    },
+    {
+      "id": "target_03",
+      "name": "Target-03",
+      "type": "inspection_point",
+      "position": [0.0, 0.5, -4.0],
+      "radius": 1.2,
+      "score": 20,
+      "effect": "glow"
+    },
+    {
+      "id": "target_04",
+      "name": "Target-04",
+      "type": "inspection_point",
+      "position": [4.0, 0.5, -2.0],
+      "radius": 1.2,
+      "score": 20,
+      "effect": "glow"
+    },
+    {
+      "id": "target_05",
+      "name": "Target-05",
+      "type": "inspection_point",
+      "position": [-4.0, 0.5, -2.0],
+      "radius": 1.2,
+      "score": 20,
+      "effect": "glow"
+    },
+    {
+      "id": "checkpoint_particle_a",
+      "name": "Checkpoint-Particle-A",
+      "type": "checkpoint",
+      "position": [2.0, 1.0, 0.0],
+      "radius": 1.5,
+      "score": 15,
+      "effect": "particle"
+    },
+    {
+      "id": "checkpoint_final_particle",
+      "name": "Final-Completion-Marker",
+      "type": "checkpoint",
+      "position": [0.0, 1.0, 8.0],
+      "radius": 1.5,
+      "score": 15,
+      "effect": "particle"
+    },
+    {
+      "id": "explosion_event_a",
+      "name": "Virtual-Explosion-A",
+      "type": "checkpoint",
+      "position": [-5.0, 0.5, 0.0],
+      "radius": 1.8,
+      "score": 10,
+      "effect": "explosion"
+    },
+    {
+      "id": "explosion_event_b",
+      "name": "Virtual-Explosion-B",
+      "type": "checkpoint",
+      "position": [6.0, 0.5, -5.0],
+      "radius": 1.8,
+      "score": 10,
+      "effect": "explosion"
+    },
+    {
+      "id": "zone_a",
+      "name": "Zone-A",
+      "type": "inspection_zone",
+      "center": [0.0, 1.0, 0.0],
+      "size": [4.0, 2.0, 4.0],
+      "score": 15,
+      "effect": "pulse"
+    },
+    {
+      "id": "zone_b",
+      "name": "Zone-B",
+      "type": "inspection_zone",
+      "center": [5.0, 1.0, 5.0],
+      "size": [3.0, 2.0, 3.0],
+      "score": 15,
+      "effect": "pulse"
+    }
+  ]
+}

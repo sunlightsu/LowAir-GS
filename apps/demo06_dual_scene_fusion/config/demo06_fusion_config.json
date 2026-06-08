@@ -1,0 +1,40 @@
+{
+  "scene_name": "demo06_lowair_dual_scene",
+  "coordinate_frame": "LOCAL_SCENE",
+  "unit": "meter",
+  "mesh": {
+    "path": "../../../sample_data/demo06_dual_scene/mesh/lowair_fusion_mesh.obj",
+    "enabled": true,
+    "opacity": 1.0,
+    "render_mode": "solid"
+  },
+  "gaussian": {
+    "path": "../../../sample_data/demo06_dual_scene/gaussian/lowair_fusion_gaussians.ply",
+    "enabled": true,
+    "opacity": 0.75,
+    "render_mode": "splat"
+  },
+  "alignment": {
+    "target": "gaussian_to_mesh",
+    "translation": [0.0, 0.0, 0.0],
+    "rotation_deg": [0.0, 0.0, 0.0],
+    "scale": 1.0,
+    "method": "manual_initial_identity",
+    "note": "Demo-06 uses synthetic paired data with approximate alignment. Real registration is reserved for later advanced work."
+  },
+  "display": {
+    "mode": "dual_fusion",
+    "show_grid": true,
+    "show_axis": true,
+    "show_mesh_bbox": true,
+    "show_gaussian_bbox": true,
+    "show_wireframe_overlay": true,
+    "show_fps": true
+  },
+  "fusion": {
+    "mesh_depth_write": true,
+    "gaussian_depth_test": true,
+    "gaussian_depth_sort": true,
+    "wireframe_overlay": true
+  }
+}

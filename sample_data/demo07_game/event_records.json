@@ -1,0 +1,45 @@
+{
+  "description": "示例事件记录（教学演示用，非真实飞行数据）",
+  "events": [
+    {
+      "id": 1,
+      "type": "target_reached",
+      "target_id": 1,
+      "timestamp": 7.2,
+      "score_delta": 20,
+      "message": "到达目标 Target-01"
+    },
+    {
+      "id": 2,
+      "type": "target_reached",
+      "target_id": 2,
+      "timestamp": 14.5,
+      "score_delta": 20,
+      "message": "到达目标 Target-02"
+    },
+    {
+      "id": 3,
+      "type": "zone_entered",
+      "target_id": 1,
+      "timestamp": 32.1,
+      "score_delta": 15,
+      "message": "进入区域 Zone-A"
+    },
+    {
+      "id": 4,
+      "type": "zone_entered",
+      "target_id": 2,
+      "timestamp": 44.8,
+      "score_delta": 15,
+      "message": "进入区域 Zone-B"
+    },
+    {
+      "id": 5,
+      "type": "mission_complete",
+      "target_id": 0,
+      "timestamp": 60.0,
+      "score_delta": 0,
+      "message": "任务完成"
+    }
+  ]
+}
